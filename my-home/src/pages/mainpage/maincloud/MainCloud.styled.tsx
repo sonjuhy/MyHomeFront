@@ -41,6 +41,10 @@ const StyledMainCloudRecent = styled.div`
   padding: 21px 20px 18px;
   background-color: ${(props) => props.theme.colors.background};
   margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const StyledMainCloudIcon = styled.img`
