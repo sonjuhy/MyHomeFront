@@ -2,12 +2,11 @@ import styled, { css } from 'styled-components';
 
 const StyledMain = styled.div`
   background-color: ${(props) => props.theme.colors.background};
-  /* height: 100vh; */
+  min-height: 100vh;
   flex: 9;
   display: flex;
   margin-left: 200px;
   min-width: 1220px;
-  /* overflow-y: scroll; */
 `;
 
 const StyledMainContain = styled.div.attrs<any>(() => ({}))`
