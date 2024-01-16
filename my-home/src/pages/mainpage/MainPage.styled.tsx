@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 
 const StyledMain = styled.div`
-  background-color: ${(props) => props.theme.colors.light};
-  width: 100vw;
+  background-color: ${(props) => props.theme.colors.background};
   height: 100vh;
   display: flex;
+  flex: 9;
 `;
 
 const StyledMainContain = styled.div.attrs<any>(() => ({}))`
