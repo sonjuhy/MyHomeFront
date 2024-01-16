@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 const StyledMainCloud = styled.div`
   background-color: #ffffff;
-  width: 100%;
   border-radius: 10px;
   padding: 25px;
+  height: 100%;
 
   font-family: ${(props) => props.theme.fonts.regularfont};
 
