@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components';
 const StyledSidebar = styled.div`
   background-color: ${(props) => props.theme.colors.dark};
   width: 200px;
+  min-width: 200px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   cursor: default;
+  position: fixed;
 `;
 
 const StyledSidebarTop = styled.div`

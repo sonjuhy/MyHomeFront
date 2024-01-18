@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 const StyledMain = styled.div`
   background-color: ${(props) => props.theme.colors.background};
-  height: 100vh;
-  display: flex;
+  min-height: 100vh;
   flex: 9;
+  display: flex;
+  margin-left: 200px;
+  min-width: 1220px;
 `;
 
 const StyledMainContain = styled.div.attrs<any>(() => ({}))`
@@ -13,6 +15,8 @@ const StyledMainContain = styled.div.attrs<any>(() => ({}))`
     const name: any = {
       contents: `
     flex : 5;
+    align-items: center;
+
 `,
       cloud: `
       flex : 2;
@@ -25,7 +29,7 @@ const StyledMainContain = styled.div.attrs<any>(() => ({}))`
       /* border: 1px solid red; */
       padding: 50px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
     `;
   }}
 `;

@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 const StyledMainCloud = styled.div`
   background-color: #ffffff;
-  width: 100%;
   border-radius: 10px;
   padding: 25px;
+  height: 100%;
 
   font-family: ${(props) => props.theme.fonts.regularfont};
 
@@ -41,6 +41,10 @@ const StyledMainCloudRecent = styled.div`
   padding: 21px 20px 18px;
   background-color: ${(props) => props.theme.colors.background};
   margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const StyledMainCloudIcon = styled.img`
