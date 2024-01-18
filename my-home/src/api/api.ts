@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const serverAxios = axios.create({
-  baseURL: process.env.SERVER_ADRESS,
+  baseURL: process.env.REACT_APP_SERVER_ADDRESS,
 });
 
 export default serverAxios;

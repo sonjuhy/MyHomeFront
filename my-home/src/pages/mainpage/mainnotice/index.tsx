@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { useNoticeGetTopHook } from '../../../hooks/Notice/useNoticeGetTop';
 import { StyledMainNotice, StyledMainNoticeContents } from './MainNotice.styled';
 
