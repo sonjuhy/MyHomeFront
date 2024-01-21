@@ -1,10 +1,10 @@
 import serverAxios from '../api';
 
-const NoticeTopGet = async () => {
+const CloudStoragePercent = async () => {
   try {
     const response = await serverAxios({
       method: 'get',
-      url: '/notice/getTopNotice',
+      url: '/file/getStorageUsage/percent',
     });
 
     return response;
@@ -13,4 +13,4 @@ const NoticeTopGet = async () => {
   }
 };
 
-export default NoticeTopGet;
+export default CloudStoragePercent;

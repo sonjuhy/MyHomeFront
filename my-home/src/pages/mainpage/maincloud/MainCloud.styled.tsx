@@ -49,6 +49,7 @@ const StyledMainCloudRecent = styled.div`
 
 const StyledMainCloudIcon = styled.img`
   width: 50px;
+  cursor: pointer;
 `;
 
 export { StyledMainCloud, StyledMainCloudUpload, StyledMainCloudCapacity, StyledMainCloudRecent, StyledMainCloudIcon };
