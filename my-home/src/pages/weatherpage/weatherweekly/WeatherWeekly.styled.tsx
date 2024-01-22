@@ -4,7 +4,7 @@ const StyledWeatherWeekly = styled.div`
   /* background-color: green; */
   border-top: 2px solid #ffffff;
   height: 200px;
-  margin: 20px 30px 50px 30px;
+  margin: 20px 100px 50px 100px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   /* gap: 10px; */
