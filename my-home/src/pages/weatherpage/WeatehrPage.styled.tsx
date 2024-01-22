@@ -23,11 +23,10 @@ const StyledWeatherBack = styled.div`
 `;
 
 const StyledWeatherTodayContainer = styled.div`
-  background-color: aliceblue;
-  margin: 20px 30px 50px 30px;
-  height: 200px;
+  margin: 20px 100px 50px 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export { StyledWeather, StyledWeatherBack, StyledWeatherTodayContainer };

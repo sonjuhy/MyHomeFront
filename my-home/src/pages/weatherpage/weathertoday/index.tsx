@@ -1,7 +1,40 @@
-import { StyledWeatherToday } from './WeatherToday.styled';
+import {
+  StyledWeatherCard,
+  StyledWeatherCardIcon,
+  StyledWeatherToday,
+  StyledWeatherTodayBold,
+} from './WeatherToday.styled';
 
 const WeatherToday = () => {
-  return <StyledWeatherToday>오늘 주르륵 날씨</StyledWeatherToday>;
+  return (
+    <StyledWeatherToday>
+      <StyledWeatherCard>
+        <StyledWeatherCardIcon src="weather/icon/sunny.png" alt="sunny" />
+        <StyledWeatherTodayBold id="temperature">+22ºC</StyledWeatherTodayBold>
+        <StyledWeatherTodayBold id="time">12:00</StyledWeatherTodayBold>
+      </StyledWeatherCard>
+      <StyledWeatherCard>
+        <StyledWeatherCardIcon src="weather/icon/sunny.png" alt="sunny" />
+        <StyledWeatherTodayBold id="temperature">+22ºC</StyledWeatherTodayBold>
+        <StyledWeatherTodayBold id="time">12:00</StyledWeatherTodayBold>
+      </StyledWeatherCard>
+      <StyledWeatherCard>
+        <StyledWeatherCardIcon src="weather/icon/sunny.png" alt="sunny" />
+        <StyledWeatherTodayBold id="temperature">+22ºC</StyledWeatherTodayBold>
+        <StyledWeatherTodayBold id="time">12:00</StyledWeatherTodayBold>
+      </StyledWeatherCard>
+      <StyledWeatherCard>
+        <StyledWeatherCardIcon src="weather/icon/sunny.png" alt="sunny" />
+        <StyledWeatherTodayBold id="temperature">+22ºC</StyledWeatherTodayBold>
+        <StyledWeatherTodayBold id="time">12:00</StyledWeatherTodayBold>
+      </StyledWeatherCard>
+      <StyledWeatherCard>
+        <StyledWeatherCardIcon src="weather/icon/sunny.png" alt="sunny" />
+        <StyledWeatherTodayBold id="temperature">+22ºC</StyledWeatherTodayBold>
+        <StyledWeatherTodayBold id="time">12:00</StyledWeatherTodayBold>
+      </StyledWeatherCard>
+    </StyledWeatherToday>
+  );
 };
 
 export default WeatherToday;
