@@ -1,11 +1,12 @@
 import { StyledProgress, StyledProgressBox, StyledProgressbar } from './Progressbar.styled';
 
-const Progressbar = () => {
+const Progressbar = (props: any) => {
+  console.log('probress', props.percent);
   return (
     <StyledProgressBox>
-      남은용량/전체용량
+      {props.usage} / {props.total}
       <StyledProgressbar>
-        <StyledProgress />
+        <StyledProgress progress={props.percent} />
       </StyledProgressbar>
     </StyledProgressBox>
   );

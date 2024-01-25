@@ -1,16 +1,15 @@
 import serverAxios from '../api';
 
-const NoticeTopGet = async () => {
+const WeatherTopPlace = async () => {
   try {
     const response = await serverAxios({
       method: 'get',
-      url: '/notice/getTopNotice',
+      url: '/weather/getTopPlace',
     });
-
     return response;
   } catch (error) {
     throw error;
   }
 };
 
-export default NoticeTopGet;
+export default WeatherTopPlace;

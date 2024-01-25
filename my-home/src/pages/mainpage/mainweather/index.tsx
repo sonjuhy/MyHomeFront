@@ -1,7 +1,9 @@
-import { useState } from 'react';
 import { StyledMainWeather, StyledMainWeatherText } from './MainWeather.styled';
+import { useWeatherGet } from '../../../hooks/weather/useWeatherGet';
 
 const MainWeather = () => {
+  const { weatherTopPlace } = useWeatherGet();
+
   // api 연동하고 수정
   const recentweather = 'windy';
 

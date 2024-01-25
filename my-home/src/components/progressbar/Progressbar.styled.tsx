@@ -17,9 +17,9 @@ const StyledProgressbar = styled.div`
   overflow: hidden;
 `;
 
-const StyledProgress = styled.div`
+const StyledProgress = styled.div<{ progress: number }>`
   background-color: ${(props) => props.theme.colors.main};
-  width: 30%;
+  width: ${(props) => props.progress}%;
   height: 15px;
   min-width: 3px;
 `;

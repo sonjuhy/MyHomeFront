@@ -11,6 +11,7 @@ const StyledMainLightBoldText = styled.div`
   font-family: ${(props) => props.theme.fonts.semiboldfont};
   font-size: 32px;
   display: flex;
+  color: ${(props) => props.theme.colors.gray};
 `;
 
 const StyledMainLightText = styled.div`
