@@ -1,5 +1,8 @@
 FROM node:alpine as builder
 
+ARG REACT_APP_SERVER_ADDRESS
+ENV REACT_APP_SERVER_ADDRESS=$REACT_APP_SERVER_ADDRESS
+
 WORKDIR "/usr/src/app"
 # COPY package.json ./
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
@@ -7,9 +10,6 @@ COPY package.json /usr/src/app/package.json
 
 RUN npm install --legacy-peer-deps
 COPY ./ ./
-
-ARG REACT_APP_SERVER_ADDRESS
-ENV REACT_APP_SERVER_ADDRESS=$SERVER_ADDRESS
 
 # 소스를 작업폴더로 복사하고 빌드
 COPY . /usr/src/app
