@@ -9,6 +9,7 @@ import {
 } from './Sidebar.styled';
 
 const Sidebar = () => {
+  if (window.location.pathname === '/') return null;
   const navigate = useNavigate();
 
   const goPage = (e: any) => {
