@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import {
   StyledSidebar,
   StyledSidebarBox,
@@ -9,6 +9,7 @@ import {
 } from './Sidebar.styled';
 
 const Sidebar = () => {
+  const location = useLocation();
   if (window.location.pathname === '/') return null;
   const navigate = useNavigate();
 
