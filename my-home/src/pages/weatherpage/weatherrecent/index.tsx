@@ -1,3 +1,4 @@
+import { useWeatherGet } from '../../../hooks/weather/useWeatherGet';
 import {
   StyledWeatherRecent,
   StyledWeatherRecentBold,
@@ -6,6 +7,7 @@ import {
 } from './WeatherRecent.styled';
 
 const WeatherRecent = () => {
+  const { weatherCurrentInfo } = useWeatherGet();
   return (
     <StyledWeatherRecent>
       <StyledWeatherRecentBox id="column">

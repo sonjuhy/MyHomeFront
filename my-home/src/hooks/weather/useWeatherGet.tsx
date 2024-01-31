@@ -1,18 +1,23 @@
 import { useEffect, useState } from 'react';
-import WeatherTopPlace from '../../api/weather/WeatehrGetTopPlace';
+import WeatherCurrentInfo from '../../api/weather/WeatehrGetCurrentInfo';
 import useLoginStore from '../../stores/login/useLoginStore';
+import useLocationGetHook from './useLocationGetHook';
 
 export const useWeatherGet = () => {
   const AccessToken = useLoginStore((state: any) => state.AccessToken);
-  const [weatherTopPlace, setWeatherTopPlace] = useState<any>();
+  const { latitude, longitude, error } = useLocationGetHook();
+
+  const [weatherCurrentInfo, setWeatherCurrentInfo] = useState<any>();
 
   useEffect(() => {
-    const getTopNotice = async () => {
-      const response = await WeatherTopPlace(AccessToken);
-      //   console.log(response);
+    const getWeatherCurrentInfo = async () => {
+      if (latitude) {
+        const response = await WeatherCurrentInfo(latitude, longitude, AccessToken);
+        console.log(response);
+      }
     };
-    getTopNotice();
-  }, []);
+    getWeatherCurrentInfo();
+  }, [latitude]);
 
-  return { weatherTopPlace };
+  return { weatherCurrentInfo };
 };
