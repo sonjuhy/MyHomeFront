@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 
 const StyledWeatherWeekly = styled.div`
-  /* background-color: green; */
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid #d8d8d8;
   height: 200px;
   margin: 20px 100px 50px 100px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0px 100px;
   /* gap: 10px; */
   position: relative;
 `;
@@ -20,7 +20,7 @@ const StyledWeatherWeeklyBold = styled.div.attrs<any>(() => ({}))`
       font-size: 14px;
       color: #5CD8E0;
       top: -35px;
-      left: 20px;
+      left: 110px;
 `,
       cardTitle: `
       color : #ffffff;
@@ -73,13 +73,13 @@ const StyledWeatherWeeklyTodayMark = styled.div`
   height: 3px;
   width: 13%;
   top: -4px;
-  left: 10px;
+  left: 100px;
 `;
 
 const StyledWeatherWeeklyTodayMarkTriangle = styled.div`
   position: absolute;
   top: -16px;
-  left: 30px;
+  left: 120px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;

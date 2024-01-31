@@ -18,8 +18,17 @@ const StyledWeatherBack = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+`;
+
+const StyledWeatherContainer = styled.div`
+  /* border: 1px solid red; */
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 1440px;
 `;
 
 const StyledWeatherTodayContainer = styled.div`
@@ -29,4 +38,4 @@ const StyledWeatherTodayContainer = styled.div`
   justify-content: space-between;
 `;
 
-export { StyledWeather, StyledWeatherBack, StyledWeatherTodayContainer };
+export { StyledWeather, StyledWeatherBack, StyledWeatherTodayContainer, StyledWeatherContainer };
