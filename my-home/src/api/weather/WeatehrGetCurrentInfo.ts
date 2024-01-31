@@ -1,12 +1,16 @@
 import serverAxios from '../api';
 
-const WeatherTopPlace = async (AccessToken: any) => {
+const WeatherCurrentInfo = async (lat: number, lon: number, AccessToken: any) => {
   try {
     const response = await serverAxios({
       method: 'get',
-      url: '/weather/getTopPlace',
+      url: '/weather/getCurrentInfo',
       headers: {
         Authorization: AccessToken,
+      },
+      params: {
+        lat: lat,
+        lon: lon,
       },
     });
     return response;
@@ -15,4 +19,4 @@ const WeatherTopPlace = async (AccessToken: any) => {
   }
 };
 
-export default WeatherTopPlace;
+export default WeatherCurrentInfo;

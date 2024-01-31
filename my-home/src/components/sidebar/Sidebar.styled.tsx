@@ -9,6 +9,7 @@ const StyledSidebar = styled.div`
   flex-direction: column;
   cursor: default;
   position: fixed;
+  z-index: 100;
 `;
 
 const StyledSidebarTop = styled.div`
