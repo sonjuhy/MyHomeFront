@@ -1,10 +1,13 @@
 import serverAxios from '../api';
 
-const CloudStoragePercent = async () => {
+const CloudStoragePercent = async (AccessToken: any) => {
   try {
     const response = await serverAxios({
       method: 'get',
       url: '/file/getStorageUsage/percent',
+      headers: {
+        Authorization: AccessToken,
+      },
     });
 
     return response;

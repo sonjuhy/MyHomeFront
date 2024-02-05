@@ -45,7 +45,7 @@ const StyledWeatherRecentBold = styled.div.attrs<any>(() => ({}))`
 `,
       temperature: `
     font-size: 60px;
-    color: #5CD8E0;
+    color: #ffffff;
 `,
       recent: `
     font-size: 14px;

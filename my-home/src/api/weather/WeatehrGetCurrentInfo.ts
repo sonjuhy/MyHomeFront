@@ -1,19 +1,22 @@
 import serverAxios from '../api';
 
-const NoticeTopGet = async (AccessToken: any) => {
+const WeatherCurrentInfo = async (lat: number, lon: number, AccessToken: any) => {
   try {
     const response = await serverAxios({
       method: 'get',
-      url: '/notice/getTopNotice',
+      url: '/weather/getCurrentInfo',
       headers: {
         Authorization: AccessToken,
       },
+      params: {
+        lat: lat,
+        lon: lon,
+      },
     });
-
     return response;
   } catch (error) {
     throw error;
   }
 };
 
-export default NoticeTopGet;
+export default WeatherCurrentInfo;
